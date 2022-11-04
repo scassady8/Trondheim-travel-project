@@ -1,6 +1,10 @@
 body {
     font-family: 'Poppins', sans-serif;
 }
+section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
 header {
     background-image: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.6)), url(../images/trondheim_houses.jpg);
     background-repeat: no-repeat;
@@ -39,6 +43,39 @@ header a {
     padding: 16px 32px;
     text-decoration: none;
 }
+footer {
+    background-image: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.8)), url(../images/fjord_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 20px 0px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-gap: 20px;
+}
+footer h3 {
+    font-size: 18px;
+    margin: 0px;
+}
+footer ul {
+    margin: 1em 0;
+    padding: 0px;
+}
+footer li {
+    list-style: none;
+    margin: 0px;
+    font-size: 15px;
+}
+footer p {
+    font-size: 15px;
+}
+footer a {
+    color: white;
+    opacity: 80%;
+}
 @media (max-width:900px) {
     header {
         background-position: center;
@@ -51,5 +88,11 @@ header a {
     }
     header h3 {
         font-size: 16px;
+    }
+    footer {
+        padding: 20px 10px;
+    }
+    .grid {
+        display: block;
     }
 }
