@@ -100,6 +100,26 @@ footer {
     background-position: center;
     color: white;
 }
+footer h3 {
+    font-size: 18px;
+    margin: 0px;
+}
+footer ul {
+    margin: 1em 0;
+    padding: 0px;
+}
+footer li {
+    list-style: none;
+    margin: 0px;
+    font-size: 15px;
+}
+footer p {
+    font-size: 15px;
+}
+footer a {
+    color: white;
+    opacity: 80%;
+}
 .grid {
     display: grid;
     grid-gap: 20px;
@@ -141,28 +161,15 @@ footer {
     padding: 16px;
     text-decoration: none;
 }
+.card-header.grid {
+    grid-gap: 0;
+}
+.embed {
+    width: 100%;
+    aspect-ratio: 1/1;
+}
 section.secondary {
     background-color: #F8F8F8;
-}
-footer h3 {
-    font-size: 18px;
-    margin: 0px;
-}
-footer ul {
-    margin: 1em 0;
-    padding: 0px;
-}
-footer li {
-    list-style: none;
-    margin: 0px;
-    font-size: 15px;
-}
-footer p {
-    font-size: 15px;
-}
-footer a {
-    color: white;
-    opacity: 80%;
 }
 @media (max-width:900px) {
     header {
@@ -190,5 +197,8 @@ footer a {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 10px;
+    }
+    .embed {
+        aspect-ratio: 16/9;
     }
 }
