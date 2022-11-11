@@ -171,6 +171,9 @@ footer a {
 section.secondary {
     background-color: #F8F8F8;
 }
+.card img {
+    height: 100%;
+}
 @media (max-width:900px) {
     header {
         background-position: center;
